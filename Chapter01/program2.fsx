@@ -1,7 +1,7 @@
 /// Open the System.IO namespace
 open System.IO
 
-let filePath = "table.csv"
+let filePath = System.IO.Path.Combine(__SOURCE_DIRECTORY__, "table.csv")
 
 /// Split row on commas
 let splitCommas (l:string) =
